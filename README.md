@@ -6,7 +6,7 @@
 
 使用 LLM 将长文本在最自然的语义断句处切分成短句分开发送，还原真人打字感。
 
-- **插件目录**：`saberlights_smart-segmentation-plugin`
+- **插件目录**：`wenaixi_mai_smart_typing_segment`
 - **生效版本**：`v1.1.0`
 - **开源许可证**：`MIT`
 

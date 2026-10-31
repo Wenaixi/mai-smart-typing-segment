@@ -1,12 +1,9 @@
 {
   "manifest_version": 2,
   "version": "1.1.0",
-  "name": "智能分段插件 (Smart Segmentation Plugin)",
+  "name": "麦麦真人模拟打字分段",
   "description": "使用 LLM 智能切分回复文本，在语义自然的地方切分，保持原文内容不变，让回复更加灵活自然。",
-  "author": {
-    "name": "久远",
-    "url": "https://github.com/saberlights"
-  },
+  "author": "Wenaixi",
   "license": "GPL-v3.0-or-later",
   "urls": {
     "repository": "https://github.com/saberlights/smart_segmentation_plugin",
@@ -34,5 +31,5 @@
       "zh-CN"
     ]
   },
-  "id": "saberlights.smart-segmentation-plugin"
+  "id": "wenaixi.mai_smart_typing_segment"
 }

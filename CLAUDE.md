@@ -1,40 +1,23 @@
-# saberlights smart-segmentation-plugin
+# CLAUDE.md - 智能分段插件 (Smart Segmentation Plugin) (saberlights_smart-segmentation-plugin)
 
-## 官方上游与版本溯源
-- 官方仓库（Upstream Repository）：https://github.com/saberlights/smart_segmentation_plugin
-- 官方作者（Author / Maintainer）：saberlights
-- 功能定位：智能消息断句与长文本拟人化分段发送插件
-- 本地演进定位：基于官方上游最新版本，融入本地生产环境兼容性定制与稳定性加固。
-- 本地专属定制：本地将非法模型名 fast 纠正为合法任务名 utils，消除每分钟百次日志噪音。
+## 1. 模块定位与系统职责
+- **插件标识符**：`saberlights_smart-segmentation-plugin`
+- **当前生效版本**：`v1.1.0`
+- **托管仓库**：[`Wenaixi/smart_segmentation_plugin`](https://github.com/Wenaixi/smart_segmentation_plugin)
+- **核心定位**：使用 LLM 将长文本在最自然的语义断句处切分成短句分开发送，还原真人打字感。
 
+## 2. 关键工程规范与配置说明
+- **配置路径**：`config.toml`（所有业务调优与鉴权参数收敛于此）；
+- **数据持久化**：优先遵循 MaiBot SDK 标准持久化规范，不直接向源码目录写入易失数据；
+- **编码与日志规范**：严格遵循 PEP 8 风格，文档与代码注释杜绝 emoji，避免虚假套话。
 
-## 插件基本信息
+## 3. 本地深度定制与稳定性修复
+根据主人指令调优为 min_length = 3，短句长句全量享受智能分段体验。
 
-- 插件 ID：`saberlights.smart-segmentation-plugin`
-- 频率：medium
-- 描述：智能分段插件（聊天消息分段）
+---
 
-## 主要功能 / 配置要点
-
-- max_version 1.99.99 (4b689b2)
-- SDK Hook 兼容
-
-## 接入依赖
-
-- MaiBot SDK 2.x（`MaiBotPlugin` 基类 + `Action`/`Command`/`HookHandler`）
-- 容器内一律用服务名（`napcat` / `core`），禁止 `127.0.0.1`
-- 配置通过 `PluginConfigBase`（Pydantic v2）
-
-## 关键日志（启动标志）
-
-插件加载时输出 `xxx 已加载`。如未加载，参考 MaiBot 启动日志 `已加载=N 失败=M 未激活=K`。
-
-## 用法
-
-由 MaiBot LLM 自主调用或通过命令触发。详见 plugin 文档或上游 README。
-
-## 历史脚注
-
-- 2026-08-15：自动生成（深度 plan B10）
-- 本仓库是主人本地副本，服务器 `/MaiBot/plugins/` 是 runtime。
-- 修改走工作流（本机改 → 本机 commit → 部署服务器 → 验证加载）。
+## 上游项目与开源溯源
+- **原作者 / 组织**：`saberlights`
+- **官方上游仓库**：[https://github.com/saberlights/smart_segmentation_plugin](https://github.com/saberlights/smart_segmentation_plugin)
+- **开源许可证**：`MIT`
+- **分支演进模式**：本仓库作为主人的深度定制与生产维护分支（`Wenaixi/smart_segmentation_plugin`）。在保持与官方上游架构演进对齐的同时，锁死并持续维护针对本服务器生产环境的稳定性补丁与核心特性。

@@ -1,6 +1,6 @@
 {
   "manifest_version": 2,
-  "version": "1.1.0",
+  "version": "0.1.0",
   "name": "麦麦真人模拟打字分段",
   "description": "使用 LLM 智能切分回复文本，在语义自然的地方切分，保持原文内容不变，让回复更加灵活自然。",
   "author": {

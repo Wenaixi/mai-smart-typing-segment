@@ -1,5 +1,11 @@
 # 智能分段插件 (Smart Segmentation Plugin)
 
+[![Release](https://img.shields.io/github/v/release/Wenaixi/mai-smart-typing-segment?style=flat-square&color=blue&label=release)](https://github.com/Wenaixi/mai-smart-typing-segment/releases)
+[![CI](https://img.shields.io/github/actions/workflow/status/Wenaixi/mai-smart-typing-segment/ci.yml?branch=main&style=flat-square&label=CI)](https://github.com/Wenaixi/mai-smart-typing-segment/actions)
+[![License](https://img.shields.io/badge/license-GPL--v3.0--or--later-green?style=flat-square)](LICENSE)
+[![Python](https://img.shields.io/badge/python-3.12%20%7C%203.13-blue?style=flat-square)](https://www.python.org/)
+[![MaiBot](https://img.shields.io/badge/MaiBot-1.2%2B-orange?style=flat-square)](https://docs.mai-mai.org)
+
 > 本插件由 [Wenaixi](https://github.com/Wenaixi) 维护，是专为生产环境深度调优的高可用分支。
 
 ## 简介与定位
@@ -7,7 +13,6 @@
 使用 LLM 将长文本在最自然的语义断句处切分成短句分开发送，还原真人打字感。
 
 - **插件目录**：`wenaixi_mai_smart_typing_segment`
-- **生效版本**：`v1.1.0`
 - **开源许可证**：`MIT`
 
 ---

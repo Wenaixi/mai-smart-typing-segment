@@ -12,7 +12,7 @@
 name = "smart_segmentation_plugin"
 
 # 配置文件版本；保持默认值即可
-config_version = "1.2.0"
+config_version = "0.1.0"
 
 # 插件版本；保持默认值即可
 version = "1.1.0"

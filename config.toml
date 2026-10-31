@@ -49,7 +49,7 @@ api_key = ""
 style = "natural"
 
 # 触发分段的最小回复长度；填写正整数，短于此长度的回复不分段
-min_length = 3
+min_length = 20
 
 # 单次回复的最大分段数；填写正整数
 max_segments = 16
